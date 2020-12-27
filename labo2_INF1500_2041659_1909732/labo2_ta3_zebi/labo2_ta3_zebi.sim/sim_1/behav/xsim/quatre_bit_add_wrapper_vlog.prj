@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ipshared/7bd1/xup_xor2.srcs/sources_1/new/xup_xor2.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_xor2_0_0/sim/quatre_bit_add_xup_xor2_0_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_xor2_0_1/sim/quatre_bit_add_xup_xor2_0_1.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_xor2_0_2/sim/quatre_bit_add_xup_xor2_0_2.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_xor2_0_3/sim/quatre_bit_add_xup_xor2_0_3.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_xor2_0_0/sim/bit_add_xup_xor2_0_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_xor2_0_1/sim/bit_add_xup_xor2_0_1.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/ipshared/778c/xup_and2.srcs/sources_1/new/xup_and2.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_and2_0_0/sim/bit_add_xup_and2_0_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_and2_0_1/sim/bit_add_xup_and2_0_1.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_and2_0_2/sim/bit_add_xup_and2_0_2.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/ipshared/ded9/xup_or3.srcs/sources_1/new/xup_or3.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/src/bit_add_xup_or3_0_0/sim/bit_add_xup_or3_0_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ipshared/f156/xup_nor4.srcs/sources_1/new/xup_nor4.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_nor4_0_0/sim/quatre_bit_add_xup_nor4_0_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xup_xor2_4_0/sim/quatre_bit_add_xup_xor2_4_0.v" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/quatre_bit_add/ip/quatre_bit_add_xlconcat_0_0/sim/quatre_bit_add_xlconcat_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

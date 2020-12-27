@@ -1,0 +1,152 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA2A9EF62A2A9EF62",
+      "device": "xc7a100tcsg324-1",
+      "name": "multiplexeur_labo2",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xup_and3_0": "",
+      "xup_and3_1": "",
+      "xup_and3_2": "",
+      "xup_and3_3": "",
+      "xup_inv_0": "",
+      "xup_inv_1": "",
+      "xup_or4_0": ""
+    },
+    "ports": {
+      "r0": {
+        "direction": "I"
+      },
+      "r1": {
+        "direction": "I"
+      },
+      "d0": {
+        "direction": "I"
+      },
+      "d1": {
+        "direction": "I"
+      },
+      "d2": {
+        "direction": "I"
+      },
+      "cout": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "xup_and3_0": {
+        "vlnv": "xilinx.com:xup:xup_and3:1.0",
+        "xci_name": "multiplexeur_labo2_xup_and3_0_0"
+      },
+      "xup_and3_1": {
+        "vlnv": "xilinx.com:xup:xup_and3:1.0",
+        "xci_name": "multiplexeur_labo2_xup_and3_0_1"
+      },
+      "xup_and3_2": {
+        "vlnv": "xilinx.com:xup:xup_and3:1.0",
+        "xci_name": "multiplexeur_labo2_xup_and3_0_2"
+      },
+      "xup_and3_3": {
+        "vlnv": "xilinx.com:xup:xup_and3:1.0",
+        "xci_name": "multiplexeur_labo2_xup_and3_0_3"
+      },
+      "xup_inv_0": {
+        "vlnv": "xilinx.com:xup:xup_inv:1.0",
+        "xci_name": "multiplexeur_labo2_xup_inv_0_0"
+      },
+      "xup_inv_1": {
+        "vlnv": "xilinx.com:xup:xup_inv:1.0",
+        "xci_name": "multiplexeur_labo2_xup_inv_0_1"
+      },
+      "xup_or4_0": {
+        "vlnv": "xilinx.com:xup:xup_or4:1.0",
+        "xci_name": "multiplexeur_labo2_xup_or4_0_0"
+      }
+    },
+    "nets": {
+      "r0_1": {
+        "ports": [
+          "r0",
+          "xup_inv_0/a",
+          "xup_and3_3/a",
+          "xup_and3_1/a"
+        ]
+      },
+      "xup_inv_1_y": {
+        "ports": [
+          "xup_inv_1/y",
+          "xup_and3_0/b",
+          "xup_and3_1/b"
+        ]
+      },
+      "d0_1": {
+        "ports": [
+          "d0",
+          "xup_and3_0/c",
+          "xup_and3_1/c"
+        ]
+      },
+      "d1_1": {
+        "ports": [
+          "d1",
+          "xup_and3_2/c"
+        ]
+      },
+      "d2_1": {
+        "ports": [
+          "d2",
+          "xup_and3_3/c"
+        ]
+      },
+      "xup_and3_0_y": {
+        "ports": [
+          "xup_and3_0/y",
+          "xup_or4_0/a"
+        ]
+      },
+      "xup_and3_1_y": {
+        "ports": [
+          "xup_and3_1/y",
+          "xup_or4_0/b"
+        ]
+      },
+      "xup_and3_2_y": {
+        "ports": [
+          "xup_and3_2/y",
+          "xup_or4_0/c"
+        ]
+      },
+      "xup_and3_3_y": {
+        "ports": [
+          "xup_and3_3/y",
+          "xup_or4_0/d"
+        ]
+      },
+      "xup_or4_0_y": {
+        "ports": [
+          "xup_or4_0/y",
+          "cout"
+        ]
+      },
+      "xup_inv_0_y": {
+        "ports": [
+          "xup_inv_0/y",
+          "xup_and3_0/a",
+          "xup_and3_2/b"
+        ]
+      },
+      "r1_1": {
+        "ports": [
+          "r1",
+          "xup_inv_1/a",
+          "xup_and3_2/a",
+          "xup_and3_3/b"
+        ]
+      }
+    }
+  }
+}

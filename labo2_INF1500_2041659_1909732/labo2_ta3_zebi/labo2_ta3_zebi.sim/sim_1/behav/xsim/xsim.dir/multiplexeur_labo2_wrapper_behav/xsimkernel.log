@@ -1,0 +1,7 @@
+Running: xsim.dir/multiplexeur_labo2_wrapper_behav/xsimk.exe -simmode gui -wdb multiplexeur_labo2_wrapper_behav.wdb -simrunnum 0 -socket 55853
+Design successfully loaded
+Design Loading Memory Usage: 5720 KB (Peak: 5720 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6408 KB (Peak: 6408 KB)
+Simulation CPU Usage: 15 ms

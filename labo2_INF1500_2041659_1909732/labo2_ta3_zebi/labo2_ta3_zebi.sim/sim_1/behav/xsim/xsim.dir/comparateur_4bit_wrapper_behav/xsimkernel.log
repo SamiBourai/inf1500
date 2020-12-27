@@ -1,0 +1,7 @@
+Running: xsim.dir/comparateur_4bit_wrapper_behav/xsimk.exe -simmode gui -wdb comparateur_4bit_wrapper_behav.wdb -simrunnum 0 -socket 53934
+Design successfully loaded
+Design Loading Memory Usage: 5776 KB (Peak: 5776 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6492 KB (Peak: 6492 KB)
+Simulation CPU Usage: 77 ms

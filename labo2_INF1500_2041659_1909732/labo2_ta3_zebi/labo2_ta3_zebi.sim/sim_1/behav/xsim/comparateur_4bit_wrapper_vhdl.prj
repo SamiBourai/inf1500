@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ipshared/36fb/sim/ATAD_SPLIT_5.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_ATAD_SPLIT_5_0_0/sim/comparateur_4bit_ATAD_SPLIT_5_0_0.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_ATAD_SPLIT_5_0_1/sim/comparateur_4bit_ATAD_SPLIT_5_0_1.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ipshared/a57a/sim/comparateur_1bit.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_0/sim/comparateur_4bit_comparateur_1bit_0_0.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_1/sim/comparateur_4bit_comparateur_1bit_0_1.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_2/sim/comparateur_4bit_comparateur_1bit_0_2.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_3/sim/comparateur_4bit_comparateur_1bit_0_3.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_4/sim/comparateur_4bit_comparateur_1bit_0_4.vhd" \
+"../../../../labo2_ta3_zebi.ip_user_files/bd/comparateur_4bit/sim/comparateur_4bit.vhd" \
+"../../../../labo2_ta3_zebi.srcs/sources_1/bd/comparateur_4bit/hdl/comparateur_4bit_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,266 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x10A584C9370A3C36",
+      "device": "xc7a100tcsg324-1",
+      "name": "multiplexeur_5B",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ATAD_SPLIT_5_0": "",
+      "ATAD_SPLIT_5_1": "",
+      "ATAD_SPLIT_5_2": "",
+      "xlconcat_0": "",
+      "multiplexeur_labo2_0": "",
+      "multiplexeur_labo2_1": "",
+      "multiplexeur_labo2_2": "",
+      "multiplexeur_labo2_3": "",
+      "multiplexeur_labo2_4": ""
+    },
+    "ports": {
+      "d0": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "d1": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "d2": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "r0": {
+        "direction": "I"
+      },
+      "r1": {
+        "direction": "I"
+      },
+      "S": {
+        "direction": "O",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "5",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "ATAD_SPLIT_5_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "multiplexeur_5B_ATAD_SPLIT_5_0_0"
+      },
+      "ATAD_SPLIT_5_1": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "multiplexeur_5B_ATAD_SPLIT_5_0_1"
+      },
+      "ATAD_SPLIT_5_2": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "multiplexeur_5B_ATAD_SPLIT_5_0_2"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "multiplexeur_5B_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      },
+      "multiplexeur_labo2_0": {
+        "vlnv": "polymtl.ca:user:multiplexeur_labo2:1.0",
+        "xci_name": "multiplexeur_5B_multiplexeur_labo2_0_5"
+      },
+      "multiplexeur_labo2_1": {
+        "vlnv": "polymtl.ca:user:multiplexeur_labo2:1.0",
+        "xci_name": "multiplexeur_5B_multiplexeur_labo2_0_6"
+      },
+      "multiplexeur_labo2_2": {
+        "vlnv": "polymtl.ca:user:multiplexeur_labo2:1.0",
+        "xci_name": "multiplexeur_5B_multiplexeur_labo2_0_7"
+      },
+      "multiplexeur_labo2_3": {
+        "vlnv": "polymtl.ca:user:multiplexeur_labo2:1.0",
+        "xci_name": "multiplexeur_5B_multiplexeur_labo2_0_8"
+      },
+      "multiplexeur_labo2_4": {
+        "vlnv": "polymtl.ca:user:multiplexeur_labo2:1.0",
+        "xci_name": "multiplexeur_5B_multiplexeur_labo2_0_9"
+      }
+    },
+    "nets": {
+      "d0_1": {
+        "ports": [
+          "d0",
+          "ATAD_SPLIT_5_0/VIN"
+        ]
+      },
+      "d1_1": {
+        "ports": [
+          "d1",
+          "ATAD_SPLIT_5_1/VIN"
+        ]
+      },
+      "d2_1": {
+        "ports": [
+          "d2",
+          "ATAD_SPLIT_5_2/VIN"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "S"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT0",
+          "multiplexeur_labo2_0/d0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT0",
+          "multiplexeur_labo2_0/d1"
+        ]
+      },
+      "ATAD_SPLIT_5_2_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_2/VOUT0",
+          "multiplexeur_labo2_0/d2"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT1",
+          "multiplexeur_labo2_1/d0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT1",
+          "multiplexeur_labo2_1/d1"
+        ]
+      },
+      "ATAD_SPLIT_5_2_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_2/VOUT1",
+          "multiplexeur_labo2_1/d2"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT2",
+          "multiplexeur_labo2_2/d0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT2",
+          "multiplexeur_labo2_2/d1"
+        ]
+      },
+      "ATAD_SPLIT_5_2_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_2/VOUT2",
+          "multiplexeur_labo2_2/d2"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT3",
+          "multiplexeur_labo2_3/d0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT3",
+          "multiplexeur_labo2_3/d1"
+        ]
+      },
+      "ATAD_SPLIT_5_2_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_2/VOUT3",
+          "multiplexeur_labo2_3/d2"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT4": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT4",
+          "multiplexeur_labo2_4/d0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT4": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT4",
+          "multiplexeur_labo2_4/d1"
+        ]
+      },
+      "ATAD_SPLIT_5_2_VOUT4": {
+        "ports": [
+          "ATAD_SPLIT_5_2/VOUT4",
+          "multiplexeur_labo2_4/d2"
+        ]
+      },
+      "multiplexeur_labo2_0_cout": {
+        "ports": [
+          "multiplexeur_labo2_0/cout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "multiplexeur_labo2_1_cout": {
+        "ports": [
+          "multiplexeur_labo2_1/cout",
+          "xlconcat_0/In1"
+        ]
+      },
+      "multiplexeur_labo2_2_cout": {
+        "ports": [
+          "multiplexeur_labo2_2/cout",
+          "xlconcat_0/In2"
+        ]
+      },
+      "multiplexeur_labo2_3_cout": {
+        "ports": [
+          "multiplexeur_labo2_3/cout",
+          "xlconcat_0/In3"
+        ]
+      },
+      "multiplexeur_labo2_4_cout": {
+        "ports": [
+          "multiplexeur_labo2_4/cout",
+          "xlconcat_0/In4"
+        ]
+      },
+      "r0_1": {
+        "ports": [
+          "r0",
+          "multiplexeur_labo2_0/r0",
+          "multiplexeur_labo2_1/r0",
+          "multiplexeur_labo2_2/r0",
+          "multiplexeur_labo2_3/r0",
+          "multiplexeur_labo2_4/r0"
+        ]
+      },
+      "r1_1": {
+        "ports": [
+          "r1",
+          "multiplexeur_labo2_4/r1",
+          "multiplexeur_labo2_3/r1",
+          "multiplexeur_labo2_2/r1",
+          "multiplexeur_labo2_1/r1",
+          "multiplexeur_labo2_0/r1"
+        ]
+      }
+    }
+  }
+}

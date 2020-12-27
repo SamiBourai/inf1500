@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/comparateur_4bit/ipshared/36fb/sim/ATAD_SPLIT_5.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_ATAD_SPLIT_5_0_0/sim/comparateur_4bit_ATAD_SPLIT_5_0_0.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_ATAD_SPLIT_5_0_1/sim/comparateur_4bit_ATAD_SPLIT_5_0_1.vhd" \
+"../../../bd/comparateur_4bit/ipshared/a57a/sim/comparateur_1bit.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_0/sim/comparateur_4bit_comparateur_1bit_0_0.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_1/sim/comparateur_4bit_comparateur_1bit_0_1.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_2/sim/comparateur_4bit_comparateur_1bit_0_2.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_3/sim/comparateur_4bit_comparateur_1bit_0_3.vhd" \
+"../../../bd/comparateur_4bit/ip/comparateur_4bit_comparateur_1bit_0_4/sim/comparateur_4bit_comparateur_1bit_0_4.vhd" \
+"../../../bd/comparateur_4bit/sim/comparateur_4bit.vhd" \
+
+nosort

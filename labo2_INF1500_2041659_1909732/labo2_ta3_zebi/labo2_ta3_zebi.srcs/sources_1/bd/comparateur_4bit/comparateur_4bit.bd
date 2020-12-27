@@ -1,0 +1,209 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x16DD4D87EDA91D5A",
+      "device": "xc7a100tcsg324-1",
+      "name": "comparateur_4bit",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ATAD_SPLIT_5_0": "",
+      "ATAD_SPLIT_5_1": "",
+      "comparateur_1bit_0": "",
+      "comparateur_1bit_1": "",
+      "comparateur_1bit_2": "",
+      "comparateur_1bit_3": "",
+      "comparateur_1bit_4": "",
+      "xup_and5_0": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "cout": {
+        "direction": "O",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "5",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "ATAD_SPLIT_5_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "comparateur_4bit_ATAD_SPLIT_5_0_0"
+      },
+      "ATAD_SPLIT_5_1": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "comparateur_4bit_ATAD_SPLIT_5_0_1"
+      },
+      "comparateur_1bit_0": {
+        "vlnv": "polymtl.ca:user:comparateur_1bit:1.0",
+        "xci_name": "comparateur_4bit_comparateur_1bit_0_0"
+      },
+      "comparateur_1bit_1": {
+        "vlnv": "polymtl.ca:user:comparateur_1bit:1.0",
+        "xci_name": "comparateur_4bit_comparateur_1bit_0_1"
+      },
+      "comparateur_1bit_2": {
+        "vlnv": "polymtl.ca:user:comparateur_1bit:1.0",
+        "xci_name": "comparateur_4bit_comparateur_1bit_0_2"
+      },
+      "comparateur_1bit_3": {
+        "vlnv": "polymtl.ca:user:comparateur_1bit:1.0",
+        "xci_name": "comparateur_4bit_comparateur_1bit_0_3"
+      },
+      "comparateur_1bit_4": {
+        "vlnv": "polymtl.ca:user:comparateur_1bit:1.0",
+        "xci_name": "comparateur_4bit_comparateur_1bit_0_4"
+      },
+      "xup_and5_0": {
+        "vlnv": "xilinx.com:xup:xup_and5:1.0",
+        "xci_name": "comparateur_4bit_xup_and5_0_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "comparateur_4bit_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      }
+    },
+    "nets": {
+      "b_1": {
+        "ports": [
+          "b",
+          "ATAD_SPLIT_5_1/VIN"
+        ]
+      },
+      "a_1": {
+        "ports": [
+          "a",
+          "ATAD_SPLIT_5_0/VIN"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT0",
+          "comparateur_1bit_0/a"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT4": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT4",
+          "comparateur_1bit_0/b"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT1",
+          "comparateur_1bit_1/a"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT3",
+          "comparateur_1bit_1/b"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT2",
+          "comparateur_1bit_2/a"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT2",
+          "comparateur_1bit_2/b"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT3",
+          "comparateur_1bit_3/a"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT1",
+          "comparateur_1bit_3/b"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT4": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT4",
+          "comparateur_1bit_4/a"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT0",
+          "comparateur_1bit_4/b"
+        ]
+      },
+      "comparateur_1bit_0_cout": {
+        "ports": [
+          "comparateur_1bit_0/cout",
+          "xup_and5_0/a"
+        ]
+      },
+      "comparateur_1bit_1_cout": {
+        "ports": [
+          "comparateur_1bit_1/cout",
+          "xup_and5_0/b"
+        ]
+      },
+      "comparateur_1bit_2_cout": {
+        "ports": [
+          "comparateur_1bit_2/cout",
+          "xup_and5_0/c"
+        ]
+      },
+      "comparateur_1bit_3_cout": {
+        "ports": [
+          "comparateur_1bit_3/cout",
+          "xup_and5_0/d"
+        ]
+      },
+      "comparateur_1bit_4_cout": {
+        "ports": [
+          "comparateur_1bit_4/cout",
+          "xup_and5_0/e"
+        ]
+      },
+      "xup_and5_0_y": {
+        "ports": [
+          "xup_and5_0/y",
+          "xlconcat_0/In0",
+          "xlconcat_0/In1",
+          "xlconcat_0/In2",
+          "xlconcat_0/In3",
+          "xlconcat_0/In4"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "cout"
+        ]
+      }
+    }
+  }
+}

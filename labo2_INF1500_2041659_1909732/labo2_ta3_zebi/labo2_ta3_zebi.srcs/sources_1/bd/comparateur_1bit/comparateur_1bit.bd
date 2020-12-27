@@ -1,0 +1,76 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA93F5A8AA93F5A8A",
+      "device": "xc7a100tcsg324-1",
+      "name": "comparateur_1bit",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xup_and2_0": "",
+      "xup_nor2_0": "",
+      "xup_or2_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I"
+      },
+      "b": {
+        "direction": "I"
+      },
+      "cout": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "xup_and2_0": {
+        "vlnv": "xilinx.com:xup:xup_and2:1.0",
+        "xci_name": "comparateur_1bit_xup_and2_0_0"
+      },
+      "xup_nor2_0": {
+        "vlnv": "xilinx.com:xup:xup_nor2:1.0",
+        "xci_name": "comparateur_1bit_xup_nor2_0_0"
+      },
+      "xup_or2_0": {
+        "vlnv": "xilinx.com:xup:xup_or2:1.0",
+        "xci_name": "comparateur_1bit_xup_or2_0_0"
+      }
+    },
+    "nets": {
+      "a_1": {
+        "ports": [
+          "a",
+          "xup_and2_0/a",
+          "xup_nor2_0/a"
+        ]
+      },
+      "b_1": {
+        "ports": [
+          "b",
+          "xup_and2_0/b",
+          "xup_nor2_0/b"
+        ]
+      },
+      "xup_and2_0_y": {
+        "ports": [
+          "xup_and2_0/y",
+          "xup_or2_0/a"
+        ]
+      },
+      "xup_nor2_0_y": {
+        "ports": [
+          "xup_nor2_0/y",
+          "xup_or2_0/b"
+        ]
+      },
+      "xup_or2_0_y": {
+        "ports": [
+          "xup_or2_0/y",
+          "cout"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../bd/diviseur_5b_par4/ip/diviseur_5b_par4_xlconstant_0_0/sim/diviseur_5b_par4_xlconstant_0_0.v" \
+"../../../bd/diviseur_5b_par4/ip/diviseur_5b_par4_xlconcat_0_0/sim/diviseur_5b_par4_xlconcat_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

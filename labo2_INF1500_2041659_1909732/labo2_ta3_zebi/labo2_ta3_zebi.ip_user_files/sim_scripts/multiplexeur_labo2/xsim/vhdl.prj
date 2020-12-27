@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/multiplexeur_labo2/sim/multiplexeur_labo2.vhd" \
+
+nosort

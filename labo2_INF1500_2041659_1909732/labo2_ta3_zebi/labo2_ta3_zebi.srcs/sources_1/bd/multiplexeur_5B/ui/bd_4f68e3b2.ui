@@ -1,0 +1,50 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port r0 -pg 1 -y 550 -defaultsOSRD
+preplace port r1 -pg 1 -y 580 -defaultsOSRD
+preplace portBus S -pg 1 -y 130 -defaultsOSRD
+preplace portBus d0 -pg 1 -y -230 -defaultsOSRD
+preplace portBus d1 -pg 1 -y 20 -defaultsOSRD
+preplace portBus d2 -pg 1 -y 230 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
+preplace inst multiplexeur_labo2_0 -pg 1 -lvl 2 -y -230 -defaultsOSRD
+preplace inst multiplexeur_labo2_1 -pg 1 -lvl 2 -y -40 -defaultsOSRD
+preplace inst multiplexeur_labo2_2 -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace inst multiplexeur_labo2_3 -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst ATAD_SPLIT_5_0 -pg 1 -lvl 1 -y -230 -defaultsOSRD
+preplace inst multiplexeur_labo2_4 -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst ATAD_SPLIT_5_1 -pg 1 -lvl 1 -y 20 -defaultsOSRD
+preplace inst ATAD_SPLIT_5_2 -pg 1 -lvl 1 -y 230 -defaultsOSRD
+preplace netloc multiplexeur_labo2_4_cout 1 2 1 480
+preplace netloc ATAD_SPLIT_5_0_VOUT0 1 1 1 N
+preplace netloc multiplexeur_labo2_1_cout 1 2 1 460
+preplace netloc ATAD_SPLIT_5_0_VOUT1 1 1 1 160
+preplace netloc multiplexeur_labo2_3_cout 1 2 1 470
+preplace netloc multiplexeur_labo2_0_cout 1 2 1 470
+preplace netloc ATAD_SPLIT_5_0_VOUT2 1 1 1 150
+preplace netloc multiplexeur_labo2_2_cout 1 2 1 460
+preplace netloc ATAD_SPLIT_5_0_VOUT3 1 1 1 230
+preplace netloc ATAD_SPLIT_5_1_VOUT0 1 1 1 170
+preplace netloc ATAD_SPLIT_5_0_VOUT4 1 1 1 200
+preplace netloc ATAD_SPLIT_5_1_VOUT1 1 1 1 210
+preplace netloc ATAD_SPLIT_5_1_VOUT2 1 1 1 210
+preplace netloc ATAD_SPLIT_5_1_VOUT3 1 1 1 190
+preplace netloc d0_1 1 0 1 N
+preplace netloc r0_1 1 0 2 NJ 550 240
+preplace netloc ATAD_SPLIT_5_1_VOUT4 1 1 1 160
+preplace netloc ATAD_SPLIT_5_2_VOUT0 1 1 1 180
+preplace netloc xlconcat_0_dout 1 3 1 N
+preplace netloc ATAD_SPLIT_5_2_VOUT1 1 1 1 250
+preplace netloc d2_1 1 0 1 N
+preplace netloc ATAD_SPLIT_5_2_VOUT2 1 1 1 260
+preplace netloc r1_1 1 0 2 NJ 580 220
+preplace netloc ATAD_SPLIT_5_2_VOUT3 1 1 1 170
+preplace netloc d1_1 1 0 1 N
+preplace netloc ATAD_SPLIT_5_2_VOUT4 1 1 1 150
+levelinfo -pg 1 -50 60 360 630 740 -top -540 -bot 770
+"
+}
+

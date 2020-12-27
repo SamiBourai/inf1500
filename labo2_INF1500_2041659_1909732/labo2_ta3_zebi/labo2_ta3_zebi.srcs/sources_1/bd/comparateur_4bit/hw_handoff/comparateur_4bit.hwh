@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 22 00:28:23 2019" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="comparateur_4bit" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="4" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="cout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/ATAD_SPLIT_5_0" HWVERSION="1.0" INSTANCE="ATAD_SPLIT_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ATAD_SPLIT_5" VLNV="xilinx.com:user:ATAD_SPLIT_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_ATAD_SPLIT_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="VIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT0" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT1" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT2" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT3" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_3" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT4" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_4" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/ATAD_SPLIT_5_1" HWVERSION="1.0" INSTANCE="ATAD_SPLIT_5_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ATAD_SPLIT_5" VLNV="xilinx.com:user:ATAD_SPLIT_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_ATAD_SPLIT_5_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="VIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT0" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_4" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT1" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_3" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT2" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_2" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT3" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VOUT4" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/comparateur_1bit_0" HWVERSION="1.0" INSTANCE="comparateur_1bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comparateur_1bit" VLNV="polymtl.ca:user:comparateur_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_comparateur_1bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VOUT0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VOUT4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="comparateur_1bit_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/comparateur_1bit_1" HWVERSION="1.0" INSTANCE="comparateur_1bit_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comparateur_1bit" VLNV="polymtl.ca:user:comparateur_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_comparateur_1bit_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VOUT1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VOUT3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="comparateur_1bit_1_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/comparateur_1bit_2" HWVERSION="1.0" INSTANCE="comparateur_1bit_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comparateur_1bit" VLNV="polymtl.ca:user:comparateur_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_comparateur_1bit_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VOUT2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VOUT2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="comparateur_1bit_2_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/comparateur_1bit_3" HWVERSION="1.0" INSTANCE="comparateur_1bit_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comparateur_1bit" VLNV="polymtl.ca:user:comparateur_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_comparateur_1bit_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VOUT3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VOUT1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="comparateur_1bit_3_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/comparateur_1bit_4" HWVERSION="1.0" INSTANCE="comparateur_1bit_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comparateur_1bit" VLNV="polymtl.ca:user:comparateur_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_comparateur_1bit_0_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_0_VOUT4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_0" PORT="VOUT4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="ATAD_SPLIT_5_1_VOUT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ATAD_SPLIT_5_1" PORT="VOUT0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="comparateur_1bit_4_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="5"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In3" RIGHT="0" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In4" RIGHT="0" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_and5_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xup_and5_0" HWVERSION="1.0" INSTANCE="xup_and5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_and5" VLNV="xilinx.com:xup:xup_and5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="comparateur_4bit_xup_and5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="comparateur_1bit_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_0" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="comparateur_1bit_1_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_1" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c" SIGIS="undef" SIGNAME="comparateur_1bit_2_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_2" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="d" SIGIS="undef" SIGNAME="comparateur_1bit_3_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_3" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="e" SIGIS="undef" SIGNAME="comparateur_1bit_4_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comparateur_1bit_4" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_and5_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In2"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In3"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

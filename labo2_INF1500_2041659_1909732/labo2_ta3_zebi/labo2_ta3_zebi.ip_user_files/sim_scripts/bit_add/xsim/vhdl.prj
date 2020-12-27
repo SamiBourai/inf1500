@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/bit_add/sim/bit_add.vhd" \
+
+nosort

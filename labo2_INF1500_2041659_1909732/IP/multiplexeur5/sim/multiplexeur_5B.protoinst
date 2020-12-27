@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"multiplexeur_5B": {
+			"proto_instances": {
+			}
+		}
+	}
+}

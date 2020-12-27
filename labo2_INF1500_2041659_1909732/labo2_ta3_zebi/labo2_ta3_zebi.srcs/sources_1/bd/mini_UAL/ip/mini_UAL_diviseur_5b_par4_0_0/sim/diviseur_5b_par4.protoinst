@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"diviseur_5b_par4": {
+			"proto_instances": {
+			}
+		}
+	}
+}

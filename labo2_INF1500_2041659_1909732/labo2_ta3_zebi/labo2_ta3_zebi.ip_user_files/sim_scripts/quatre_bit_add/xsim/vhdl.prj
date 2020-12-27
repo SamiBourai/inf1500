@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/quatre_bit_add/ipshared/0273/sim/ATAD_SPLIT_4.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_ATAD_SPLIT_4_0_0/sim/quatre_bit_add_ATAD_SPLIT_4_0_0.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_ATAD_SPLIT_4_0_1/sim/quatre_bit_add_ATAD_SPLIT_4_0_1.vhd" \
+"../../../bd/quatre_bit_add/ipshared/2752/sim/bit_add.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_0/sim/quatre_bit_add_bit_add_0_0.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_1/sim/quatre_bit_add_bit_add_0_1.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_2/sim/quatre_bit_add_bit_add_0_2.vhd" \
+"../../../bd/quatre_bit_add/ip/quatre_bit_add_bit_add_0_3/sim/quatre_bit_add_bit_add_0_3.vhd" \
+"../../../bd/quatre_bit_add/sim/quatre_bit_add.vhd" \
+
+nosort

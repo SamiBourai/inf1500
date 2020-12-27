@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"quatre_bit_add": {
+			"proto_instances": {
+			}
+		}
+	}
+}

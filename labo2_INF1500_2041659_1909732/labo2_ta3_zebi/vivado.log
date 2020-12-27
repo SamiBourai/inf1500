@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 17:09:31 2019
+# Process ID: 16328
+# Current directory: E:/INF1500_2041659_1909732/labo2_ta3_zebi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12632 E:\INF1500_2041659_1909732\labo2_ta3_zebi\labo2_ta3_zebi.xpr
+# Log file: E:/INF1500_2041659_1909732/labo2_ta3_zebi/vivado.log
+# Journal file: E:/INF1500_2041659_1909732/labo2_ta3_zebi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/INF1500_2041659_1909732/labo2_ta3_zebi/labo2_ta3_zebi.xpr
+INFO: [Project 1-313] Project file moved from 'Y:/TEMP/labo2_ta3_zebi' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/one_bit_add'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/INF1500_2041659_1909732/IP'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/4_bit_add'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/miroir_1bit'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/miroir_4bit'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/diviseur_par4'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/multiplexeur1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/multiplexeur5'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/XUP_LIB'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'e:/INF1500_2041659_1909732/IP/ATAD_LIB'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Logiciels/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:44 . Memory (MB): peak = 776.668 ; gain = 171.660
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 17:10:44 2019...

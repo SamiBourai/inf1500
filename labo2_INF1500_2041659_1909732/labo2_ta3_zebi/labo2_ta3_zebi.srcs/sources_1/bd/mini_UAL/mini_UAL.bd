@@ -1,0 +1,254 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF7DB1C7EF7DB1C7E",
+      "device": "xc7a100tcsg324-1",
+      "name": "mini_UAL",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "quatre_bit_add_0": "",
+      "diviseur_5b_par4_0": "",
+      "comparateur_4bit_0": "",
+      "ATAD_SPLIT_5_0": "",
+      "ATAD_SPLIT_5_1": "",
+      "xlconcat_0": "",
+      "xlconcat_1": "",
+      "ATAD_SPLIT_4_0": "",
+      "xlconcat_2": "",
+      "multiplexeur_5B_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "B": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "R0": {
+        "direction": "I"
+      },
+      "R1": {
+        "direction": "I"
+      },
+      "cout": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      }
+    },
+    "components": {
+      "quatre_bit_add_0": {
+        "vlnv": "polymtl.ca:user:quatre_bit_add:1.0",
+        "xci_name": "mini_UAL_quatre_bit_add_0_0"
+      },
+      "diviseur_5b_par4_0": {
+        "vlnv": "polymtl.ca:user:diviseur_5b_par4:1.0",
+        "xci_name": "mini_UAL_diviseur_5b_par4_0_0"
+      },
+      "comparateur_4bit_0": {
+        "vlnv": "polymtl.ca:user:comparateur_4bit:1.0",
+        "xci_name": "mini_UAL_comparateur_4bit_0_0"
+      },
+      "ATAD_SPLIT_5_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "mini_UAL_ATAD_SPLIT_5_0_0"
+      },
+      "ATAD_SPLIT_5_1": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_5:1.0",
+        "xci_name": "mini_UAL_ATAD_SPLIT_5_1_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "mini_UAL_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "mini_UAL_xlconcat_0_1",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "ATAD_SPLIT_4_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_4:1.0",
+        "xci_name": "mini_UAL_ATAD_SPLIT_4_0_2"
+      },
+      "xlconcat_2": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "mini_UAL_xlconcat_2_2",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      },
+      "multiplexeur_5B_0": {
+        "vlnv": "polymtl.ca:user:multiplexeur_5B:1.0",
+        "xci_name": "mini_UAL_multiplexeur_5B_0_0"
+      }
+    },
+    "nets": {
+      "A_1": {
+        "ports": [
+          "A",
+          "diviseur_5b_par4_0/a",
+          "comparateur_4bit_0/a",
+          "ATAD_SPLIT_5_0/VIN"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "comparateur_4bit_0/b",
+          "ATAD_SPLIT_5_1/VIN"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT1",
+          "xlconcat_0/In1"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT2",
+          "xlconcat_0/In2"
+        ]
+      },
+      "ATAD_SPLIT_5_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_0/VOUT3",
+          "xlconcat_0/In3"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT0",
+          "xlconcat_1/In0"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT1",
+          "xlconcat_1/In1"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT2",
+          "xlconcat_1/In2"
+        ]
+      },
+      "ATAD_SPLIT_5_1_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_5_1/VOUT3",
+          "xlconcat_1/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "quatre_bit_add_0/a"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "quatre_bit_add_0/b"
+        ]
+      },
+      "quatre_bit_add_0_s": {
+        "ports": [
+          "quatre_bit_add_0/s",
+          "ATAD_SPLIT_4_0/VIN"
+        ]
+      },
+      "quatre_bit_add_0_cout": {
+        "ports": [
+          "quatre_bit_add_0/cout",
+          "xlconcat_2/In4"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT0",
+          "xlconcat_2/In0"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT1",
+          "xlconcat_2/In1"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT2",
+          "xlconcat_2/In2"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT3",
+          "xlconcat_2/In3"
+        ]
+      },
+      "R0_1": {
+        "ports": [
+          "R0",
+          "quatre_bit_add_0/cin",
+          "multiplexeur_5B_0/r0"
+        ]
+      },
+      "xlconcat_2_dout": {
+        "ports": [
+          "xlconcat_2/dout",
+          "multiplexeur_5B_0/d0"
+        ]
+      },
+      "diviseur_5b_par4_0_cout": {
+        "ports": [
+          "diviseur_5b_par4_0/cout",
+          "multiplexeur_5B_0/d1"
+        ]
+      },
+      "comparateur_4bit_0_cout": {
+        "ports": [
+          "comparateur_4bit_0/cout",
+          "multiplexeur_5B_0/d2"
+        ]
+      },
+      "R1_1": {
+        "ports": [
+          "R1",
+          "multiplexeur_5B_0/r1"
+        ]
+      },
+      "multiplexeur_5B_0_S": {
+        "ports": [
+          "multiplexeur_5B_0/S",
+          "cout"
+        ]
+      }
+    }
+  }
+}
