@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov  4 22:27:05 2019" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="CIRCUIT_FINALE" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GRAYYYY_0" PORT="S"/>
+        <CONNECTION INSTANCE="le_mod_secretttt_0" PORT="ZEBI"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="r0" SIGIS="undef" SIGNAME="External_Ports_r0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_BITOO_0" PORT="Ro"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="SrtFNL" RIGHT="0" SIGIS="undef" SIGNAME="MUX_4_BITOO_0_izi">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_BITOO_0" PORT="izi"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/GRAYYYY_0" HWVERSION="1.0" INSTANCE="GRAYYYY_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="GRAYYYY" VLNV="polymtl.ca:user:GRAYYYY:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CIRCUIT_FINALE_GRAYYYY_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="S" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Z" RIGHT="0" SIGIS="undef" SIGNAME="GRAYYYY_0_Z">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUX_4_BITOO_0" PORT="converser"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/MUX_4_BITOO_0" HWVERSION="1.0" INSTANCE="MUX_4_BITOO_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX_4_BITOO" VLNV="polymtl.ca:user:MUX_4_BITOO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CIRCUIT_FINALE_MUX_4_BITOO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Ro" SIGIS="undef" SIGNAME="External_Ports_r0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="r0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="converser" RIGHT="0" SIGIS="undef" SIGNAME="GRAYYYY_0_Z">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GRAYYYY_0" PORT="Z"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="izi" RIGHT="0" SIGIS="undef" SIGNAME="MUX_4_BITOO_0_izi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SrtFNL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="secret" RIGHT="0" SIGIS="undef" SIGNAME="le_mod_secretttt_0_Messi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="le_mod_secretttt_0" PORT="Messi"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/le_mod_secretttt_0" HWVERSION="1.0" INSTANCE="le_mod_secretttt_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="le_mod_secretttt" VLNV="polymtl.ca:user:le_mod_secretttt:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CIRCUIT_FINALE_le_mod_secretttt_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="Messi" RIGHT="0" SIGIS="undef" SIGNAME="le_mod_secretttt_0_Messi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUX_4_BITOO_0" PORT="secret"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="ZEBI" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

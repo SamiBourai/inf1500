@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"MUX_4_BITOO": {
+			"proto_instances": {
+			}
+		}
+	}
+}

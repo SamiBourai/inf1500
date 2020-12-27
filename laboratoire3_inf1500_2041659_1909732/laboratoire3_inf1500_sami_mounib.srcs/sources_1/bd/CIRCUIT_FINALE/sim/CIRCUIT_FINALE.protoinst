@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CIRCUIT_FINALE": {
+			"proto_instances": {
+			}
+		}
+	}
+}

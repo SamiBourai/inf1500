@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/Bouda_senti_decimal.vhd" \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/DISP_7_SEG_LAB4.vhd" \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/MUX_2_1.vhd" \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/Modulo_5.vhd" \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/Multi_2.vhd" \
+"../../../../labo4_vhdlcode.srcs/sources_1/new/LABO4_COMPLET.vhd" \
+
+# Do not sort compile order
+nosort

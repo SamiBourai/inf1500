@@ -1,0 +1,79 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xDF10B20FDF10B20F",
+      "device": "xc7a100tcsg324-1",
+      "name": "CIRCUIT_FINALE",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "GRAYYYY_0": "",
+      "le_mod_secretttt_0": "",
+      "MUX_4_BITOO_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "r0": {
+        "direction": "I"
+      },
+      "SrtFNL": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "GRAYYYY_0": {
+        "vlnv": "polymtl.ca:user:GRAYYYY:1.0",
+        "xci_name": "CIRCUIT_FINALE_GRAYYYY_0_0"
+      },
+      "le_mod_secretttt_0": {
+        "vlnv": "polymtl.ca:user:le_mod_secretttt:1.0",
+        "xci_name": "CIRCUIT_FINALE_le_mod_secretttt_0_0"
+      },
+      "MUX_4_BITOO_0": {
+        "vlnv": "polymtl.ca:user:MUX_4_BITOO:1.0",
+        "xci_name": "CIRCUIT_FINALE_MUX_4_BITOO_0_0"
+      }
+    },
+    "nets": {
+      "A_1": {
+        "ports": [
+          "A",
+          "GRAYYYY_0/S",
+          "le_mod_secretttt_0/ZEBI"
+        ]
+      },
+      "GRAYYYY_0_Z": {
+        "ports": [
+          "GRAYYYY_0/Z",
+          "MUX_4_BITOO_0/converser"
+        ]
+      },
+      "le_mod_secretttt_0_Messi": {
+        "ports": [
+          "le_mod_secretttt_0/Messi",
+          "MUX_4_BITOO_0/secret"
+        ]
+      },
+      "r0_1": {
+        "ports": [
+          "r0",
+          "MUX_4_BITOO_0/Ro"
+        ]
+      },
+      "MUX_4_BITOO_0_izi": {
+        "ports": [
+          "MUX_4_BITOO_0/izi",
+          "SrtFNL"
+        ]
+      }
+    }
+  }
+}

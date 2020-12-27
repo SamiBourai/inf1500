@@ -1,0 +1,1 @@
+-wto "dd079ef4c5314dfbbff7599bdcc210bd" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Bouda_senti_decimal_behav" "xil_defaultlib.Bouda_senti_decimal" -log "elaborate.log" 

@@ -1,0 +1,183 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x85FC1350050A99A7",
+      "device": "xc7a100tcsg324-1",
+      "name": "MUX_4_BITOO",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "muxxxxx_0": "",
+      "ATAD_SPLIT_4_0": "",
+      "ATAD_SPLIT_4_1": "",
+      "muxxxxx_1": "",
+      "muxxxxx_2": "",
+      "muxxxxx_3": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "converser": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "secret": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "Ro": {
+        "direction": "I"
+      },
+      "izi": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "4",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "muxxxxx_0": {
+        "vlnv": "polymtl.ca:user:muxxxxx:1.0",
+        "xci_name": "MUX_4_BITOO_muxxxxx_0_0"
+      },
+      "ATAD_SPLIT_4_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_4:1.0",
+        "xci_name": "MUX_4_BITOO_ATAD_SPLIT_4_0_0"
+      },
+      "ATAD_SPLIT_4_1": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_4:1.0",
+        "xci_name": "MUX_4_BITOO_ATAD_SPLIT_4_0_1"
+      },
+      "muxxxxx_1": {
+        "vlnv": "polymtl.ca:user:muxxxxx:1.0",
+        "xci_name": "MUX_4_BITOO_muxxxxx_0_1"
+      },
+      "muxxxxx_2": {
+        "vlnv": "polymtl.ca:user:muxxxxx:1.0",
+        "xci_name": "MUX_4_BITOO_muxxxxx_0_2"
+      },
+      "muxxxxx_3": {
+        "vlnv": "polymtl.ca:user:muxxxxx:1.0",
+        "xci_name": "MUX_4_BITOO_muxxxxx_0_3"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "MUX_4_BITOO_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "muxxxxx_0_SORTIE": {
+        "ports": [
+          "muxxxxx_0/SORTIE",
+          "xlconcat_0/In0"
+        ]
+      },
+      "muxxxxx_1_SORTIE": {
+        "ports": [
+          "muxxxxx_1/SORTIE",
+          "xlconcat_0/In1"
+        ]
+      },
+      "muxxxxx_2_SORTIE": {
+        "ports": [
+          "muxxxxx_2/SORTIE",
+          "xlconcat_0/In2"
+        ]
+      },
+      "muxxxxx_3_SORTIE": {
+        "ports": [
+          "muxxxxx_3/SORTIE",
+          "xlconcat_0/In3"
+        ]
+      },
+      "Ro_1": {
+        "ports": [
+          "Ro",
+          "muxxxxx_0/S01",
+          "muxxxxx_1/S01",
+          "muxxxxx_2/S01",
+          "muxxxxx_3/S01"
+        ]
+      },
+      "converser_1": {
+        "ports": [
+          "converser",
+          "ATAD_SPLIT_4_0/VIN"
+        ]
+      },
+      "secret_1": {
+        "ports": [
+          "secret",
+          "ATAD_SPLIT_4_1/VIN"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT0",
+          "muxxxxx_0/K"
+        ]
+      },
+      "ATAD_SPLIT_4_1_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_4_1/VOUT0",
+          "muxxxxx_0/P"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT1",
+          "muxxxxx_1/K"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT2",
+          "muxxxxx_2/K"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT3",
+          "muxxxxx_3/K"
+        ]
+      },
+      "ATAD_SPLIT_4_1_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_4_1/VOUT1",
+          "muxxxxx_1/P"
+        ]
+      },
+      "ATAD_SPLIT_4_1_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_4_1/VOUT2",
+          "muxxxxx_2/P"
+        ]
+      },
+      "ATAD_SPLIT_4_1_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_4_1/VOUT3",
+          "muxxxxx_3/P"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "izi"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 04:35:00 2019
+# Process ID: 29088
+# Current directory: D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29700 D:\TOUUUUUTTT\labo4_vhdlcode_1909732_2041659\labo4_vhdlcode.xpr
+# Log file: D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/vivado.log
+# Journal file: D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/labo4_vhdlcode.xpr
+INFO: [Project 1-313] Project file moved from 'C:/TEMP/labo4_vhdlcode' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Logiciels/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 763.469 ; gain = 151.574
+update_compile_order -fileset sources_1

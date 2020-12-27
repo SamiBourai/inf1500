@@ -1,0 +1,134 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 29088
+License: Customer
+
+Current time: 	Tue Nov 26 04:35:16 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 645 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Logiciels/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Logiciels/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	saboubo
+User home directory: C:/Users/saboubo
+User working directory: D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: C:/Logiciels/Xilinx/Vivado
+HDI_APPROOT: C:/Logiciels/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Logiciels/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Logiciels/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/saboubo/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/saboubo/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/saboubo/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Logiciels/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/vivado.log
+Vivado journal file location: 	D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/vivado.jou
+Engine tmp dir: 	D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/.Xil/Vivado-29088-L3714-18
+
+Xilinx Environment Variables
+----------------------------
+ANDROID_SDK_HOME: C:\temp
+ANDROID_SDK_ROOT: C:\Logiciels\Android-SDK
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Logiciels/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@132.207.29.6
+XILINX_DSP: C:/Logiciels/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Logiciels/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Logiciels/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Logiciels/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Logiciels/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 567 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\TOUUUUUTTT\labo4_vhdlcode_1909732_2041659\labo4_vhdlcode.xpr. Version: Vivado v2018.3 
+// Tcl Message: open_project D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/labo4_vhdlcode.xpr 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2579ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2584 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 45 MB. Current time: 11/26/19, 4:35:18 AM EST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1053ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1053 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659/labo4_vhdlcode.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/TEMP/labo4_vhdlcode' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Logiciels/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+95840kb) [00:00:21]
+// [Engine Memory]: 642 MB (+521370kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  2620 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 819ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 2112ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2112 ms.
+// [Engine Memory]: 728 MB (+56656kb) [00:00:28]
+// Project name: labo4_vhdlcode; location: D:/TOUUUUUTTT/labo4_vhdlcode_1909732_2041659; part: xc7a100tcsg324-1
+// [GUI Memory]: 107 MB (+9348kb) [00:00:28]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 763.469 ; gain = 151.574 
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, contraint_lab4.xdc]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, contraint_lab4.xdc]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 47 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// Elapsed time: 194 seconds
+selectCodeEditor("contraint_lab4.xdc", 570, 336); // cl (w, cp)
+selectCodeEditor("contraint_lab4.xdc", 66, 229, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 20 seconds
+selectCodeEditor("contraint_lab4.xdc", 553, 150); // cl (w, cp)
+selectCodeEditor("contraint_lab4.xdc", 555, 180); // cl (w, cp)
+selectCodeEditor("contraint_lab4.xdc", 62, 60, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, cp)

@@ -1,0 +1,87 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY DISP_7_SEG_LAB4 IS 	  
+    PORT (
+        CLK :   IN STD_LOGIC;
+        SEG_0 : IN STD_LOGIC_VECTOR(3 downto 0);
+        SEG_1 : IN STD_LOGIC_VECTOR(3 downto 0);
+        AN :    OUT STD_LOGIC_VECTOR(7 downto 0);
+        CA :    OUT STD_LOGIC;
+        CB :    OUT STD_LOGIC;
+        CC :    OUT STD_LOGIC;
+        CD :    OUT STD_LOGIC; 
+        CE :    OUT STD_LOGIC; 
+        CF :    OUT STD_LOGIC; 
+        CG :    OUT STD_LOGIC; 
+        DP :    OUT STD_LOGIC
+    );
+END DISP_7_SEG_LAB4;
+
+ARCHITECTURE BEHAVE OF DISP_7_SEG_LAB4 IS
+
+SIGNAL DISPLAY : INTEGER RANGE 0 TO 1 := 0;
+
+SIGNAL TICK : STD_LOGIC; 
+
+SIGNAL D7S_AN : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL D7S_CA : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+BEGIN		
+	
+	-- Frequency divider
+	PROCESS(CLK)
+	VARIABLE DIC_CNT : UNSIGNED(16 downto 0);
+	BEGIN
+		IF rising_edge(CLK) THEN
+			DIC_CNT := DIC_CNT + 1;
+		END IF;
+		TICK <= DIC_CNT(DIC_CNT'LEFT);
+	END PROCESS;
+	
+	PROCESS (TICK, DISPLAY, SEG_0, SEG_1)
+	BEGIN
+		IF RISING_EDGE(TICK) THEN
+			IF DISPLAY = 1 THEN
+				DISPLAY <= 0;
+				
+				CASE SEG_0 IS
+				    WHEN "0000" => D7S_CA <= "00000011";
+				    WHEN "0001" => D7S_CA <= "10011111";
+				    WHEN "0010" => D7S_CA <= "00100101";
+				    WHEN "0011" => D7S_CA <= "00001101";
+				    WHEN "0100" => D7S_CA <= "10011001";
+				    WHEN "0101" => D7S_CA <= "01001001";
+				    WHEN "0110" => D7S_CA <= "01000001"; 
+				    WHEN "0111" => D7S_CA <= "00011111";
+				    WHEN "1000" => D7S_CA <= "00000001";
+				    WHEN "1001" => D7S_CA <= "00001001";
+				    WHEN OTHERS => D7S_CA <= "11111111";
+				END CASE;
+			ELSE
+				DISPLAY <= DISPLAY + 1;
+				
+				CASE SEG_1 IS
+				    WHEN "0000" => D7S_CA <= "00000011";
+				    WHEN "0001" => D7S_CA <= "10011111";
+				    WHEN "0010" => D7S_CA <= "00100101";
+				    WHEN "0011" => D7S_CA <= "00001101";
+				    WHEN "0100" => D7S_CA <= "10011001";
+				    WHEN "0101" => D7S_CA <= "01001001";
+				    WHEN "0110" => D7S_CA <= "01000001"; 
+				    WHEN "0111" => D7S_CA <= "00011111";
+				    WHEN "1000" => D7S_CA <= "00000001";
+				    WHEN "1001" => D7S_CA <= "00001001";
+				    WHEN OTHERS => D7S_CA <= "11111111";
+				END CASE;
+			END IF;
+		END IF;
+		D7S_AN <= (others => '1');
+		D7S_AN(DISPLAY) <= '0';		
+	END PROCESS;
+
+	AN <= D7S_AN;
+	(CA, CB, CC, CD, CE, CF, CG, DP) <= D7S_CA;
+
+END ARCHITECTURE BEHAVE;

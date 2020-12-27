@@ -1,0 +1,123 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBCE6282BF5E53387",
+      "device": "xc7a100tcsg324-1",
+      "name": "GRAYYYY",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ATAD_SPLIT_4_0": "",
+      "xup_xor2_0": "",
+      "xup_xor2_1": "",
+      "xup_xor2_2": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "S": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "Z": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "4",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "ATAD_SPLIT_4_0": {
+        "vlnv": "xilinx.com:user:ATAD_SPLIT_4:1.0",
+        "xci_name": "GRAYYYY_ATAD_SPLIT_4_0_0"
+      },
+      "xup_xor2_0": {
+        "vlnv": "xilinx.com:xup:xup_xor2:1.0",
+        "xci_name": "GRAYYYY_xup_xor2_0_0"
+      },
+      "xup_xor2_1": {
+        "vlnv": "xilinx.com:xup:xup_xor2:1.0",
+        "xci_name": "GRAYYYY_xup_xor2_0_1"
+      },
+      "xup_xor2_2": {
+        "vlnv": "xilinx.com:xup:xup_xor2:1.0",
+        "xci_name": "GRAYYYY_xup_xor2_0_2"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "GRAYYYY_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "S_1": {
+        "ports": [
+          "S",
+          "ATAD_SPLIT_4_0/VIN"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT0": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT0",
+          "xup_xor2_0/a"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT1": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT1",
+          "xup_xor2_1/a",
+          "xup_xor2_0/b"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT2": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT2",
+          "xup_xor2_2/a",
+          "xup_xor2_1/b"
+        ]
+      },
+      "ATAD_SPLIT_4_0_VOUT3": {
+        "ports": [
+          "ATAD_SPLIT_4_0/VOUT3",
+          "xup_xor2_2/b",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xup_xor2_2_y": {
+        "ports": [
+          "xup_xor2_2/y",
+          "xlconcat_0/In2"
+        ]
+      },
+      "xup_xor2_1_y": {
+        "ports": [
+          "xup_xor2_1/y",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xup_xor2_0_y": {
+        "ports": [
+          "xup_xor2_0/y",
+          "xlconcat_0/In0"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "Z"
+        ]
+      }
+    }
+  }
+}
